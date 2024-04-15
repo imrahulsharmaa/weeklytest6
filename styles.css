@@ -1,0 +1,918 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --heading-font-size: 2rem;
+  --body-font-size: 0.9375rem;
+  --font14: 0.875rem;
+  --button-color: #ff4a32;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg1 {
+  background-color: #000000;
+  height: 12px;
+}
+
+.bg2 {
+  background-color: #ffffff;
+  top: 10px;
+  z-index: 1;
+  height: 50px;
+  position: fixed;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.92);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 20px;
+  font-size: var(--font14);
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px -2px 5px #e4e4e7;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.nav-right span {
+  font-weight: 200;
+  transition: 0.3s ease-in-out;
+}
+
+nav li a:hover,
+nav .nav-right span:hover {
+  cursor: pointer;
+  color: var(--button-color);
+}
+
+.expand-more {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.expand-more:hover {
+  color: #ff4a32;
+}
+
+.expand-more .expand-more span {
+  transform: rotate(180deg);
+}
+
+.hero {
+  width: 100%;
+}
+
+.grid-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.image-at-hero {
+  overflow: hidden;
+}
+
+.text-logo {
+  height: 700px;
+}
+
+.img1 {
+  background: linear-gradient(
+      rgba(243, 237, 237, 0.5),
+      rgba(243, 237, 237, 0.5)
+    ),
+    url(https://boostedusa.com/cdn/shop/files/boosted-rev-electric-scooter-now-in-stock_c5926a3e-f2ff-46a9-9c91-97765798bac4_1000x.jpg?v=1646159164);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background: linear-gradient(
+      rgba(243, 237, 237, 0.5),
+      rgba(243, 237, 237, 0.5)
+    ),
+    url(https://boostedusa.com/cdn/shop/files/Boosted-USA-Super-73-Home-Box-feature-600x544_1000x.jpg?v=1680839620);
+
+  background-position: center;
+  background-size: cover;
+}
+
+.img3 {
+  background: linear-gradient(
+      rgba(243, 237, 237, 0.5),
+      rgba(243, 237, 237, 0.5)
+    ),
+    url(https://boostedusa.com/cdn/shop/files/evolve-electric-skateboard-now-in-stock_1000x.jpg?v=1646159245);
+  background-position: center;
+  background-size: cover;
+}
+
+.img4 {
+  background: linear-gradient(
+      rgba(243, 237, 237, 0.5),
+      rgba(243, 237, 237, 0.5)
+    ),
+    url(https://boostedusa.com/cdn/shop/files/minimotors-electric-scooters-2_1000x.jpg?v=1655828690);
+  background-position: center;
+  background-size: cover;
+}
+
+.text-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.img-text-logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-at-hero a {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 420px;
+  left: 0px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.img-text-logo div img {
+  width: 300px;
+}
+
+.img-text-logo .img2 img {
+  width: 750px;
+  left: 0;
+  top: 200px;
+}
+
+.img-text-logo div {
+  transition: 0.3s ease-in-out;
+}
+.img-text-logo div:hover {
+  transform: scale(1.1);
+}
+
+.blackbg-below-hero {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blackbg-below-hero img {
+  margin: 20px 50px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-below-hero {
+  width: 55%;
+  text-align: center;
+  margin: 60px 0;
+  padding: 0px 20px;
+}
+
+.text-below-hero h1 {
+  font-size: var(--heading-font-size);
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 0 120px;
+}
+
+.super73 {
+  margin-bottom: 15px;
+}
+
+.boosted a {
+  color: red;
+  font-size: 15px;
+}
+
+.boosted {
+  margin-bottom: 15px;
+}
+.why-super73 {
+  width: 100%;
+}
+
+.sub-why-super73 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin: auto;
+  max-width: 1140px;
+  gap: 20px;
+}
+
+.images-at-main {
+  width: 50%;
+  overflow: hidden;
+}
+
+.text-at-main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images-at-main img {
+  height: 440px;
+  transition: 0.2s ease-in-out;
+}
+
+.images-at-main img:hover {
+  transform: scale(1.1);
+}
+
+.text-at-main h1 {
+  font-size: var(--heading-font-size);
+}
+
+.text-at-main p {
+  font-size: var(--body-font-size);
+  margin: 20px 0;
+}
+
+.buttons {
+  width: 130px;
+  padding: 7px 0;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.para2 {
+  padding-right: 40px;
+  line-height: 25px;
+}
+
+.minimotor {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 130px;
+  margin: 50px 0;
+}
+
+.images-at-minimotor {
+  width: 50%;
+}
+.images-at-minimotor img {
+  width: 100%;
+}
+.minimotor h4 {
+  margin-top: 20px;
+}
+
+.minimotor button {
+  width: 160px;
+}
+.youtube {
+  max-width: 1160px;
+  width: 100%;
+}
+.youtube iframe {
+  width: 100%;
+
+  height: 654px;
+}
+
+.minimotor .para2 {
+  padding-right: 50px;
+}
+
+.skateboard {
+  width: 100%;
+}
+.skateboard-container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  gap: 50px;
+}
+
+.images-at-skateboard {
+  overflow: hidden;
+}
+.images-at-skateboard img:hover {
+  transform: scale(1.1);
+}
+.images-at-skateboard img {
+  transition: 0.4s ease-in-out;
+  width: 100%;
+}
+
+.text-at-skateboard {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.skateboard .para2 {
+  padding-right: 20px;
+}
+
+.electric-scooter img {
+  height: auto;
+  width: 100%;
+}
+
+.electric-scooter {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.text-electric-scooter {
+  position: absolute;
+  width: 100%;
+  gap: 15px;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-electric-scooter h4 {
+  font-size: var(--body-font-size);
+  letter-spacing: 1px;
+  text-align: center;
+  width: 550px;
+}
+
+.text-electric-scooter h1 {
+  font-size: 2.8rem;
+}
+
+.terrain-skateboard img {
+  height: auto;
+  width: 100%;
+}
+
+.terrain-skateboard {
+  position: relative;
+  margin-top: 20px;
+}
+
+.text-terrain-skateboard {
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-terrain-skateboard h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.text-terrain-skateboard button {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.accessories {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accessories h1 {
+  font-size: var(--heading-font-size);
+  margin: 10px 0;
+  transition: 0.25s ease-in-out;
+}
+
+hr {
+  width: 70px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-width: 2px;
+  border-bottom: none;
+  padding: auto;
+}
+
+.accessories-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  margin: 40px 0 90px 0;
+}
+
+.items {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items img {
+  height: 134px;
+}
+
+.items p {
+  color: #ff4a32;
+  font-size: var(--body-font-size);
+}
+
+.newsletter {
+  width: 100%;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe {
+  max-width: 515px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.subscribe h1 {
+  font-size: var(--heading-font-size);
+  margin: 40px 0 20px;
+}
+
+.subscribe > p {
+  font-size: var(--body-font-size);
+}
+
+.inputbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 40px 0;
+  gap: 10px;
+}
+
+.inputbox input {
+  height: 45px;
+  padding-left: 20px;
+  border: 1px solid silver;
+}
+
+.inputbox label {
+  font-weight: bold;
+}
+
+#consent {
+  font-size: 11px;
+  padding: 0 10px;
+}
+.subscribe button {
+  width: 100%;
+  margin: 20px 20px;
+  border-radius: 3px;
+  padding: 15px;
+}
+.consent-contact {
+  background-color: #a0a0a0;
+  height: 1.6rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.below-newsletter {
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+.contains-card {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+}
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  gap: 10px;
+}
+.card img {
+  height: 90px;
+}
+.card p {
+  line-height: 23px;
+  font-size: var(--body-font-size);
+}
+.card h1 {
+  margin-bottom: 10px;
+  font-size: var(--heading-font-size);
+}
+
+footer {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+.footer-logo {
+  width: 33%;
+  display: flex;
+}
+
+.explore {
+  width: 33%;
+}
+
+.about-footer {
+  width: 33%;
+}
+
+.about h2 {
+  font-size: 20px;
+  margin: 50px 0 20px 0;
+}
+
+.about {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  padding: 0 150px;
+}
+
+.about-footer p {
+  font-size: var(--font14);
+  line-height: 22px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.about .explore ul {
+  list-style: none;
+  font-size: var(--font14);
+  line-height: 22px;
+}
+
+.footer-logo img {
+  height: 130px;
+  margin: 50px 0 20px 0;
+}
+
+.address {
+  width: 250px;
+}
+
+.copyright {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 25px;
+}
+
+.buttons:hover {
+  background-color: rgb(81, 81, 81);
+}
+
+.accessories h1:hover {
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+.accessories .items:hover {
+  cursor: pointer;
+}
+
+.inputbox input:focus {
+  outline-color: rgb(140, 140, 166);
+}
+
+label span {
+  color: #ff4a32;
+}
+
+.news-button:hover {
+  background-color: rgba(255, 74, 50, 0.6);
+}
+
+.explore ul li {
+  transition: 0.2s ease-in-out;
+}
+
+.explore ul li:hover {
+  color: #ff4a32;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .nav-left ul {
+    display: none;
+  }
+  .grid-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 851px) {
+  .sub-why-super73 {
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-bottom: 15px;
+  }
+  .minimotor {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+  }
+  body {
+    width: 100% !important;
+  }
+  .images-at-skateboard img {
+    height: 430px;
+  }
+  .text-below-hero h1 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    width: 100% !important;
+  }
+  .img-text-logo .img2 img {
+    width: 450px;
+  }
+
+  .text-below-hero h1 {
+    padding: 0 0px;
+  }
+
+  .sub-why-super73 {
+    flex-wrap: wrap;
+    padding: 0 110px;
+    margin-bottom: 15px;
+  }
+
+  .text-at-main {
+    width: 100%;
+  }
+  .images-at-main img {
+    width: 100%;
+    height: auto;
+  }
+  .images-at-main {
+    flex-grow: 1;
+  }
+  .minimotor {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 110px;
+  }
+  .images-at-minimotor {
+    width: 100%;
+  }
+
+  .skateboard-container {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .items img {
+    height: 50px;
+    flex-grow: 1;
+  }
+
+  .contains-card {
+    flex-direction: column;
+  }
+  .card {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  .about-footer {
+    width: 100%;
+  }
+  .about-footer p {
+    width: 100%;
+  }
+  .footerSectionParent {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .img-text-logo div img,
+  .img-text-logo .img2 img {
+    width: 100%;
+  }
+  .text-below-hero {
+    width: 100%;
+  }
+  .sub-why-super73,
+  .minimotor {
+    padding: 0 20px;
+  }
+
+  .skateboard-container {
+    width: 90%;
+  }
+
+  .text-electric-scooter {
+    gap: 1px;
+  }
+  .text-electric-scooter h4 {
+    width: 100%;
+  }
+  .youtube iframe {
+    height: 100%;
+  }
+  .items img {
+    height: 50px;
+    flex-grow: 0;
+    flex-wrap: wrap;
+  }
+  .items {
+    width: 250px;
+  }
+  .accessories-container {
+    flex-wrap: wrap;
+  }
+  .about {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .about-footer p {
+    padding-right: 0px;
+  }
+  .subscribe {
+    padding: 20px;
+  }
+
+  .text-terrain-skateboard {
+    gap: 0;
+  }
+  .footerSectionParent {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-electric-scooter h4,
+  .text-terrain-skateboard h4 {
+    display: none;
+  }
+
+  .text-terrain-skateboard h1,
+  .text-electric-scooter h1 {
+    font-size: 20px;
+  }
+  .footerSectionParent {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 150px;
+  z-index: 1;
+  margin-top: 1.4rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.dropdown-content li {
+  display: block;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 3px;
+  scale: 1.3;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.footerSectionParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.footerSectionParentChild2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.payment_option_view {
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 1px solid lightblue;
+}
